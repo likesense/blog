@@ -1,0 +1,13 @@
+root = "."
+tmp_dir = "tmp"
+
+[build]
+  cmd = "go build -o tmp/main ./cmd"  
+  include_ext = ["go"]
+  exclude_dir = ["assets", "tmp"]
+
+[watch]
+  include_dir = ["." ]
+  exclude_dir = ["tmp"]
+  include_ext = ["go"]
+  exclude_ext = []
